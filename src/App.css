@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.my-nav {
+  height: 50px;
+  width: 100%;
+  background-color: #198754;
+  position: relative;
+}
+
+.my-nav > .my-nav-header {
+  display: inline;
+}
+
+.my-nav > .my-nav-header > .my-nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.my-nav > .my-nav-btn {
+  display: none;
+}
+
+.my-nav > .my-nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.links {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  transition-duration: 350ms;
+  
+}
+
+.my-active{
+  color: rgb(6, 19, 1);
+  background-color: rgba(129, 236, 188, 0.788);
+}
+
+.links:hover {
+  color: rgb(6, 19, 1);
+  background-color: rgba(129, 236, 188, 0.788);
+}
+
+.my-nav > #my-nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .my-nav > .my-nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .my-nav > .my-nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-  to {
-    transform: rotate(360deg);
+  .my-nav > .my-nav-btn > label:hover,.my-nav  #my-nav-check:checked ~ .my-nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .my-sp {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .my-nav > .my-nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .links {
+    display: block;
+    width: 100%;
+  }
+  .my-nav > #my-nav-check:not(:checked) ~ .my-nav-links {
+    height: 0px;
+  }
+  .my-nav > #my-nav-check:checked ~ .my-nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }
