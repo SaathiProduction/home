@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './componemts/Header.js';
 import Home from './componemts/Home';
+import Footer from './componemts/Footer';
 import Links from './componemts/Links';
 import Contact from './componemts/Contact';
 import React from 'react'
@@ -31,6 +32,7 @@ function App() {
         </Switch>
       
     </Router>
+    <Footer />
     </div>
   );
 }

@@ -8,12 +8,14 @@ body {
 }
 
 .my-nav {
-  height: 50px;
+  height: 54px;
   width: 100%;
   background-color: #198754;
   position: relative;
 }
-
+.my-nav-logo{
+  display: inline-block;
+}
 .my-nav > .my-nav-header {
   display: inline;
 }
@@ -30,7 +32,10 @@ body {
 }
 
 .my-nav > .my-nav-links {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: inherit;
   float: right;
   font-size: 18px;
 }
@@ -58,17 +63,41 @@ body {
   display: none;
 }
 
+.my-footer{
+  width:100%;
+  
+  display: grid;
+  place-items: center;
+  background-color: rgb(108, 196, 122);
+  padding: 1rem 0;
+  
+}
+
+.Links-div{
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container{
+  padding: 11rem 3rem 14.3rem 3rem;
+}
+
 @media (max-width:600px) {
   .my-nav > .my-nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
-    top: 0px;
+    height: inherit;
   }
   .my-nav > .my-nav-btn > label {
     display: inline-block;
     width: 50px;
-    height: 50px;
+    height: 54px;
     padding: 13px;
   }
   .my-nav > .my-nav-btn > label:hover,.my-nav  #my-nav-check:checked ~ .my-nav-btn > label {
@@ -99,7 +128,19 @@ body {
     height: 0px;
   }
   .my-nav > #my-nav-check:checked ~ .my-nav-links {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 54px);
     overflow-y: auto;
   }
 }
+
+@media (max-width:762px){
+  .container{
+    padding: 9rem 3rem 12.3rem 3rem;
+  }
+}
+@media (max-width:449px){
+  .container{
+    padding: 4rem 3rem 7.3rem 3rem;
+  }
+}
+

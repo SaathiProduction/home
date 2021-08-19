@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Van from './img/van.png'
 import {
 
     Link
@@ -9,6 +11,9 @@ export default function Header(props) {
             <div className="my-nav">
                 <input type="checkbox" id="my-nav-check" />
                 <div className="my-nav-header">
+                    <div className="my-nav-logo">
+                        <img src={Van} width="45" height="45"/>
+                    </div>
                     <div className="my-nav-title">
                         Saathi Production
                     </div>
@@ -16,8 +21,8 @@ export default function Header(props) {
                 <div className="my-nav-btn">
                     <label htmlFor="my-nav-check">
                         <span className="my-sp" />
-                        <span className="my-sp"/>
-                        <span className="my-sp"/>
+                        <span className="my-sp" />
+                        <span className="my-sp" />
                     </label>
                 </div>
 
@@ -27,20 +32,20 @@ export default function Header(props) {
                         <Link className="links" to="links">Links</Link>
                         <Link className="links" to="contact">Contact us</Link>
                     </div>
-                    : (props.links) ? 
-                    
-                    <div className="my-nav-links">
-                        <Link className="links" to="/" >Home</Link>
-                        <Link className="links my-active" to="links">Links</Link>
-                        <Link className="links" to="contact">Contact us</Link>
-                    </div>
-                        : (props.contact) ? 
+                    : (props.links) ?
+
                         <div className="my-nav-links">
                             <Link className="links" to="/" >Home</Link>
-                            <Link className="links" to="links">Links</Link>
-                            <Link className="links my-active" to="contact">Contact us</Link>
-                        </div> 
-                        : ""
+                            <Link className="links my-active" to="links">Links</Link>
+                            <Link className="links" to="contact">Contact us</Link>
+                        </div>
+                        : (props.contact) ?
+                            <div className="my-nav-links">
+                                <Link className="links" to="/" >Home</Link>
+                                <Link className="links" to="links">Links</Link>
+                                <Link className="links my-active" to="contact">Contact us</Link>
+                            </div>
+                            : ""
                 }
             </div>
 
