@@ -25,10 +25,10 @@ function App() {
             <Header home = {false} links = {true} contact = {false}/>
             <Links />
           </Route>
-          <Route exact path="/contact">
+          {/* <Route exact path="/contact">
             <Header home = {false} links = {false} contact = {true}/>
             <Contact />
-          </Route>
+          </Route> */}
         </Switch>
       
     </Router>

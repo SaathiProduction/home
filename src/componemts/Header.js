@@ -30,21 +30,21 @@ export default function Header(props) {
                     <div className="my-nav-links">
                         <Link className="links my-active" to="/" >Home</Link>
                         <Link className="links" to="links">Links</Link>
-                        <Link className="links" to="contact">Contact us</Link>
+                        {/* <Link className="links" to="contact">Contact us</Link> */}
                     </div>
                     : (props.links) ?
 
                         <div className="my-nav-links">
                             <Link className="links" to="/" >Home</Link>
                             <Link className="links my-active" to="links">Links</Link>
-                            <Link className="links" to="contact">Contact us</Link>
+                            {/* <Link className="links" to="contact">Contact us</Link> */}
                         </div>
-                        : (props.contact) ?
-                            <div className="my-nav-links">
-                                <Link className="links" to="/" >Home</Link>
-                                <Link className="links" to="links">Links</Link>
-                                <Link className="links my-active" to="contact">Contact us</Link>
-                            </div>
+                        // : (props.contact) ?
+                        //     <div className="my-nav-links">
+                        //         <Link className="links" to="/" >Home</Link>
+                        //         <Link className="links" to="links">Links</Link>
+                        //         <Link className="links my-active" to="contact">Contact us</Link>
+                        //     </div>
                             : ""
                 }
             </div>
