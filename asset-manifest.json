@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.f24ef5a6.chunk.css",
+    "main.js": "/home/static/js/main.deabf6a9.chunk.js",
+    "main.js.map": "/home/static/js/main.deabf6a9.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.8cba5afb.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.8cba5afb.js.map",
+    "static/js/2.a5d6756d.chunk.js": "/home/static/js/2.a5d6756d.chunk.js",
+    "static/js/2.a5d6756d.chunk.js.map": "/home/static/js/2.a5d6756d.chunk.js.map",
+    "static/js/3.8311a5d7.chunk.js": "/home/static/js/3.8311a5d7.chunk.js",
+    "static/js/3.8311a5d7.chunk.js.map": "/home/static/js/3.8311a5d7.chunk.js.map",
+    "index.html": "/home/index.html",
+    "static/css/main.f24ef5a6.chunk.css.map": "/home/static/css/main.f24ef5a6.chunk.css.map",
+    "static/js/2.a5d6756d.chunk.js.LICENSE.txt": "/home/static/js/2.a5d6756d.chunk.js.LICENSE.txt",
+    "static/media/ayush.beff33e2.jpg": "/home/static/media/ayush.beff33e2.jpg",
+    "static/media/facebook.e3116f8c.png": "/home/static/media/facebook.e3116f8c.png",
+    "static/media/gmail.d5646b86.png": "/home/static/media/gmail.d5646b86.png",
+    "static/media/ins.68575020.png": "/home/static/media/ins.68575020.png",
+    "static/media/main-logo.39d98d7e.png": "/home/static/media/main-logo.39d98d7e.png",
+    "static/media/mohit.e1f6d27c.jpg": "/home/static/media/mohit.e1f6d27c.jpg",
+    "static/media/q.1c6bc537.png": "/home/static/media/q.1c6bc537.png",
+    "static/media/youtube.89804d66.png": "/home/static/media/youtube.89804d66.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cba5afb.js",
+    "static/js/2.a5d6756d.chunk.js",
+    "static/css/main.f24ef5a6.chunk.css",
+    "static/js/main.deabf6a9.chunk.js"
+  ]
+}
