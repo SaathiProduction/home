@@ -19,7 +19,7 @@ export default function Home() {
             </div>
 
             <div class="px-4 py-5 my-5 text-center">
-                <img src={logo} width="250" height="54" />
+                <img src={logo} alt="" width="250" height="54" />
                 <h1 class="display-5 fw-bold">About Us!</h1>
                 <div class="col-lg-6 mx-auto">
                     <p style={{ fontSize: '1.55rem' }} class="lead mb-4">Saathi Production is an organization that builds websites according to the need of clients. It also makes courses related to computer science published in a Youtube channel named 'LearnWithUs'. We are currently available on Facebook and Instagram. All the links by which you can follow & contact us are given on the links page. </p>

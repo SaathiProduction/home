@@ -3,7 +3,6 @@ import Header from './componemts/Header.js';
 import Home from './componemts/Home';
 import Footer from './componemts/Footer';
 import Links from './componemts/Links';
-import Contact from './componemts/Contact';
 import React from 'react'
 import {
   BrowserRouter as Router,
@@ -18,17 +17,18 @@ function App() {
       
         <Switch>
           <Route exact path="/">
-            <Header home = {true} links = {false} contact = {false}/>
+            <Header home = {true} links = {false} />
+            <Home />
+          </Route>
+          <Route exact path="/home">
+            <Header home = {true} links = {false} />
             <Home />
           </Route>
           <Route exact path="/links">
-            <Header home = {false} links = {true} contact = {false}/>
+            <Header home = {false} links = {true} />
             <Links />
           </Route>
-          {/* <Route exact path="/contact">
-            <Header home = {false} links = {false} contact = {true}/>
-            <Contact />
-          </Route> */}
+          
         </Switch>
       
     </Router>

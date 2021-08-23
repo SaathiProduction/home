@@ -12,7 +12,7 @@ export default function Header(props) {
                 <input type="checkbox" id="my-nav-check" />
                 <div className="my-nav-header">
                     <div className="my-nav-logo">
-                        <img src={Van} width="45" height="45"/>
+                        <img src={Van} alt="" width="45" height="45"/>
                     </div>
                     <div className="my-nav-title">
                         Saathi Production
@@ -28,23 +28,18 @@ export default function Header(props) {
 
                 {(props.home) ?
                     <div className="my-nav-links">
-                        <Link className="links my-active" to="/" >Home</Link>
-                        <Link className="links" to="links">Links</Link>
-                        {/* <Link className="links" to="contact">Contact us</Link> */}
+                        <Link className="links my-active" to="/home" >Home</Link>
+                        <Link className="links" to="/links">Links</Link>
+                        
                     </div>
                     : (props.links) ?
 
                         <div className="my-nav-links">
-                            <Link className="links" to="/" >Home</Link>
-                            <Link className="links my-active" to="links">Links</Link>
-                            {/* <Link className="links" to="contact">Contact us</Link> */}
+                            <Link className="links" to="/home" >Home</Link>
+                            <Link className="links my-active" to="/links">Links</Link>
+                            
                         </div>
-                        // : (props.contact) ?
-                        //     <div className="my-nav-links">
-                        //         <Link className="links" to="/" >Home</Link>
-                        //         <Link className="links" to="links">Links</Link>
-                        //         <Link className="links my-active" to="contact">Contact us</Link>
-                        //     </div>
+                        
                             : ""
                 }
             </div>
